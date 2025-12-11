@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@hookform/resolvers": "^5.2.2",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "@upstash/redis": "^1.35.7",
+    "@vercel/kv": "^3.0.0",
+    "firebase": "^12.2.1",
+    "firebase-admin": "^13.5.0",
+    "next": "^16.0.7",
+    "nodemailer": "^7.0.10",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-hook-form": "^7.65.0",
+    "resend": "^6.5.2",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/grecaptcha": "^3.0.9",
+    "@types/gtag.js": "^0.0.20",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/youtube": "^0.1.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

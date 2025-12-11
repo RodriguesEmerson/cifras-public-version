@@ -1,0 +1,15 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+   content: [
+      "./src/**/*.{js,ts,jsx,tsx}", 
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
+   ],
+   theme: {
+      extend: {
+         fontFamily: {
+            mono: ['var(--font-roboto-mono)', 'monospace'],
+         },
+      },
+   }
+}

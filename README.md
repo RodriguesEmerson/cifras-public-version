@@ -1,11 +1,11 @@
-# 🎵 Projeto Cifras CCB - OBS: Versão pública, não é a mesma do deploy.
+# Projeto Cifras CCB - OBS: Versão pública, não é a mesma do deploy.
 
 Um site moderno e otimizado para exibição de **cifras e hinos da Congregação Cristã no Brasil (CCB)**, desenvolvido com **Next.js**, **TypeScript** e **Firebase**.  
 O foco do projeto é oferecer **velocidade, acessibilidade e clareza**, com páginas estáticas geradas no build para os hinos mais acessados e carregamento dinâmico para os demais.
 
 ---
 
-## 🚀 Tecnologias principais
+## Tecnologias principais
 
 | Categoria | Tecnologias |
 |------------|--------------|
@@ -16,7 +16,7 @@ O foco do projeto é oferecer **velocidade, acessibilidade e clareza**, com pág
 
 ---
 
-## 📂 Estrutura básica
+## Estrutura básica
 
 src/  
 ├─ app/  
@@ -37,7 +37,7 @@ src/
 ├─ hooks/  
 ├─ types/  
 
-## 🧩 Metadados e SEO
+## Metadados e SEO
 
 Cada página de cifra gera automaticamente:
 - **Título** e **descrição** personalizados  
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: CifraPageProps): Promise<Meta
 export async function generateStaticParams()  
 ```
 
-## 📊 Futuras melhorias
+## Futuras melhorias
    * Sistema de busca por hinos e acordes
 
    * Adição de favoritos (armazenamento local)
@@ -60,7 +60,7 @@ export async function generateStaticParams()
 
    * Versão PWA (instalável em dispositivos móveis)
 
-## 🧠 Observações técnicas
+## Observações técnicas
    * Cada cifra é buscada a partir de seu sanitized_title, armazenado no Firestore.
 
    * O conteúdo da cifra é processado no servidor, permitindo renderização completa no HTML gerado (ideal para SEO).
@@ -68,7 +68,7 @@ export async function generateStaticParams()
    * A função generateMetadata() é executada após generateStaticParams() no build.  
   
     
-## 🪄 Execução local
+## Execução local
 ### Instalar dependências
 ```
 npm install
@@ -84,12 +84,12 @@ npm run dev
 npm run build
 ```
 
-## 📜 Licença
+## Licença
 
 Este projeto é de código fechado, de uso pessoal e educativo.
 Não possui vínculo oficial com a Congregação Cristã no Brasil.
 
-## ✨ Autor
+## Autor
 
 Emerson Rodrigues
 Desenvolvedor Full Stack em formação

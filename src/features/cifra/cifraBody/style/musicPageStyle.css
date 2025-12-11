@@ -1,0 +1,128 @@
+
+:root {
+   --bg-mobile-bar: rgb(255, 255, 255);
+   --border-color: rgb(209, 213, 219);
+   --default-gray: rgb(217, 217, 217);
+   --primary-color: rgb(112, 8, 210);
+   --text-main-color: rgb(29, 29, 29);
+}
+
+.cifra-descktop {
+   position: relative;
+   font-family: 'Roboto Mono', monospace;
+   color: var(--text-main-color);
+   line-height: 1.4em;
+   width: fit-content;
+   white-space: pre-wrap;
+
+   & b {
+      position: relative;
+      color: var(--primary-color);
+      z-index: 1;
+      bottom: 0px;
+
+      &:hover {
+         position: relative;
+         cursor: pointer;
+         background-color: var(--primary-color);
+         color: white;
+
+         &::before {
+            content: '  ';
+            border-radius: 3px 0 0 3px;
+            background-color: var(--primary-color);
+            position: absolute;
+            left: -9px;
+            top: 0px;
+            height: 100%;
+            z-index: -1;
+         }
+
+         &::after {
+            content: '  ';
+            border-radius: 0 3px 3px 0;
+            background-color: var(--primary-color);
+            position: absolute;
+            right: -9px;
+            top: 0px;
+            height: 100%;
+            z-index: -1;
+         }
+
+         &:active {
+            background-color: rebeccapurple;
+         }
+      }
+   }
+
+   & pre {
+      letter-spacing: 1px;
+   }
+}
+
+
+/* Mobile */
+.cifra-options-bar {
+   position: fixed;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   gap: 0.25rem;
+   bottom: 10px;
+   left: 2.5%;
+   width: 95%;
+   border-radius: 8px;
+   height: 3.5rem;
+   z-index: 5;
+   box-shadow: 0px -2px 12px 5px rgba(0, 0, 0, 0.145);
+   background-color: var(--bg-mobile-bar);
+   border-top: 1px solid var(--border-color);
+
+   & .options-bar-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.1rem;
+      font-size: 0.75rem;
+      padding: 0 0.5rem;
+      height: 3.5rem;
+      width: 33vw;
+      border-right: 1px solid var(--border-color);
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 640px and up) */
+@media only screen and (min-width: 640px) {
+   .cifra {
+      max-width: 500px;
+   }
+
+   .cifra-options-bar {
+      position: relative;
+      display: flex;
+      left: 0;
+      width: 7.5rem;
+      flex-direction: column;
+      background-color: white;
+      padding: 0.5rem;
+      z-index: 5;
+      justify-content: space-around;
+      align-items: center;
+      height: fit-content;
+      box-shadow: none;
+      border: none;
+
+      & .options-bar-button {
+         height: 2rem;
+         width: 7rem;
+         padding: 0.5rem;
+         gap: 0rem;
+         border-radius: 0.375rem;
+         justify-content: space-between;
+         border: 1px solid var(--border-color);
+         cursor: pointer;
+      }
+   }
+}
